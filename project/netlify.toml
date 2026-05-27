@@ -1,0 +1,97 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# ── lovienteopromos.com — landings de producto ──
+[[redirects]]
+  from = "/aspiradora-voltra-3en1/*"
+  to = "/aspiradora-voltra-3en1/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/creatinastar/*"
+  to = "/creatinastar/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/fine-beauty-colageno/*"
+  to = "/fine-beauty-colageno/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/inflador-neumaticos/*"
+  to = "/inflador-neumaticos/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/joystick-ps5-cosmic-red/*"
+  to = "/joystick-ps5-cosmic-red/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/mini-heladera-suono/*"
+  to = "/mini-heladera-suono/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/ninja-blast-portable-blender/*"
+  to = "/ninja-blast-portable-blender/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/star-nutrition-whey-protein/*"
+  to = "/star-nutrition-whey-protein/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/starlink-estandar/*"
+  to = "/starlink-estandar/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/starlink-mini/*"
+  to = "/starlink-mini/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+[[redirects]]
+  from = "/bateria-de-cocina-gadnic/*"
+  to = "/bateria-de-cocina-gadnic/:splat"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+# ── lovienteopromos.com — raíz va a la landing principal ──
+[[redirects]]
+  from = "/*"
+  to = "/lovienteopromos/index.html"
+  status = 200
+  conditions = {Host = ["lovienteopromos.com", "www.lovienteopromos.com"]}
+
+# ── Dominio principal de Bolt — admin panel ──
+[[redirects]]
+  from = "/admin"
+  to = "/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin.html"
+  status = 200
+
+# ── Dominio principal de Bolt — SPA catch-all ──
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
