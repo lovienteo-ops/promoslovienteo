@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block internal and admin paths from crawlers
+Disallow: /api/track
+Disallow: /admin
+Disallow: /test-producto/
+
+# Sitemaps
+Sitemap: https://lovienteopromos.com/sitemap.xml
